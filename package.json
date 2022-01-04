@@ -42,7 +42,7 @@
   },
   "scripts": {
     "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && gatsby develop",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && gatsby build",
+    "build": "gatsby build",
     "heroku-postbuild": "SET NODE_OPTIONS=--openssl-legacy-provider && gatsby build",
     "serve": "SET NODE_OPTIONS=--openssl-legacy-provider && gatsby serve",
     "postinstall": "node ./bin/hello.js",
