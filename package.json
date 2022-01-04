@@ -41,10 +41,10 @@
     "url": "git+https://github.com/contentful/starter-gatsby-blog.git"
   },
   "scripts": {
-    "dev": "gatsby develop",
-    "build": "gatsby build",
-    "heroku-postbuild": "gatsby build",
-    "serve": "gatsby serve",
+    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && gatsby develop",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && gatsby build",
+    "heroku-postbuild": "SET NODE_OPTIONS=--openssl-legacy-provider && gatsby build",
+    "serve": "SET NODE_OPTIONS=--openssl-legacy-provider && gatsby serve",
     "postinstall": "node ./bin/hello.js",
     "setup": "node ./bin/setup.js",
     "netlify:login": "netlify login",
